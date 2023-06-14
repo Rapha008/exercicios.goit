@@ -1,0 +1,28 @@
+"""
+correta = "B"
+opcao_usuario = ""
+
+while opcao_usuario != correta:
+    opcao_usuario = input("Digite a opção correta (A, B, C): ")
+
+    if opcao_usuario == correta:
+        print("Parabéns! Você acertou a alternativa!")
+    else:
+        print("Opção INCORRETA selecionada, tente novamente")
+"""
+
+correta = "B"
+tentativas = 3
+
+for tentativa in range(1, tentativas + 1):
+    opcao_usuario = input("Digite a opção correta (A, B, C): ")
+
+    if opcao_usuario == correta:
+        print("Parabéns! Você acertou a alternativa!")
+        break
+    else:
+        print("Tente novamente. Opção incorreta.")
+
+    if tentativa == tentativas:
+        print("Suas tentativas acabaram. A opção correta era:", correta)
+
